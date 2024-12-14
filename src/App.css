@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.folder, .file {
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.folder:hover, .file:hover {
+  background-color: #e0f7fa;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.folder {
+  font-weight: bold;
+  color: #00796b;
+  justify-content: space-between;
+}
+
+.folder span {
+  display: flex;
+  align-items: center;
+}
+
+.folder span::before {
+  margin-right: 10px;
+}
+
+.file {
+  color: #00796b;
+}
+
+.file::before {
+  margin-right: 10px;
+}
+
+.folder-container {
+  padding-left: 25px;
+  padding-top: 5px;
+}
+
+.folder-container .folder, .folder-container .file {
+  font-size: 14px;
+  color: #00796b;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 2px solid #00796b;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #00796b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00796b;
+  color: #ffffff;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #00796b;
+}
+
+button.add-folder {
+  font-weight: bold;
+}
+
+button.add-file {
+  font-style: italic;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  background-color: #ffffff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.inputContainer > span {
+  margin-top: 0;
+  font-size: 14px; 
+  color: #00796b; 
+  font-weight: bold;
+}
+
+.inputContainer__input {
+  margin: 0; 
+  padding: 8px; 
+  display: flex;
+  border: 1px solid #00796b; 
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px; 
+  background-color: #ffffff; 
+  cursor: pointer; 
+  transition: all 0.3s ease;
+}
